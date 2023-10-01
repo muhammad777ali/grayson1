@@ -1,0 +1,300 @@
+@import 'fonts.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat-Regular';
+    background: #000;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px 15px;
+}
+.navbar{
+    background: #282828;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.nav__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav__link{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s linear;
+    position: relative;
+}
+.nav__link:hover{
+    color: orange;
+}
+.nav__link::before{
+    content: "";
+    height: 4px;
+    width: 4px;
+    background: #fff;
+    position: absolute;
+    bottom: -2px;
+    transition: 0.5s linear;
+}
+.nav__link:hover::before{
+    width: 70px;
+    background: orange;
+}
+
+.nav__form{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.nav__form-btn{
+    background: #282828;
+    padding: 4px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s linear;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.nav__form-btn:hover{
+    background: gray;
+}
+.shoping__child{
+    position: absolute;
+    top: 30%;
+    right: -90px;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+.child_-link{
+    transform: translate(70px, 10px);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #151515;
+    display: inline-block;
+    width: 150px;
+    padding: 5px 7px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 7px;
+    transition: 0.5s linear;
+}
+.child_-link:hover{
+    background: orange;
+    color: #000;
+}
+.nav__form-btn:hover .shoping__child{
+    opacity: 1;
+}
+.header__baner{
+    background-image: url(../images/Header-bk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header__title{
+    color: #fff;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: 'ProstoOne-Regular';
+}
+.header__btn{
+    padding: 13px 14px;
+    background: #fff;
+    color: #171718;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    transition: 0.5s linear;
+}
+.header__btn:hover{
+    background: rgba(255, 255, 255, 0.246);
+    color: #fff;
+}
+
+/* Section White Air podds */
+.white__airpods{
+    background: #151515;
+    padding: 30px 0px;  
+}
+.white__content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.item-text{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+/* Section Black Air podds */
+.black__airpods{
+    background: #151515;
+    padding: 50px 0;
+}
+.black__content{
+    display: flex;
+    align-items: center;
+    gap: 87px;
+}
+.black__text{
+    width: 540px;
+}
+/* Section PRO Air podds */
+.pro__airpods{
+    background: #151515;
+    padding: 50px 0px;
+}
+.pro__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro-text{
+    width: 333px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.pro-img{
+    position: relative;
+}
+.pro-img::before{
+    content: "";
+    width: 61px;
+    height: 1px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: -68px;
+    transition: 0.7s linear;
+
+}
+.pro-img:hover::before{
+    transform: rotate(360deg);
+    background: orange;
+    height: 4px;
+}
+.pro-img::after{
+    content: "";
+    width: 61px;
+    height: 1px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    transition: 0.7s linear;
+
+}
+.pro-img:hover::after{
+    transform: rotate(-360deg);
+    background: orange;
+    height: 4px;
+}
+/* Section Iphone */
+.collection__iphone{
+    background: #151515;
+    padding: 79px 0 55px 0;
+}
+.iphone__content{
+    display: flex;
+    column-gap: 35px;
+    align-items: center;
+}
+.iphone__item{
+    background: #FFF;
+    border-radius: 10px;
+    width: 255px;
+    height: 312px;
+    text-align: center;
+    padding: 15px 0;
+}
+.iphone__title{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.iphone__img{
+    margin: 10px 0;
+}
+.iphone__text{
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.iphone__btn{
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 7px 57px;
+    border: none;
+    transition: 0.5s ease;
+}
+.iphone__btn:hover{
+    background: #282828;
+}
+/* Footer Section */
+.footer__section{
+    background: #282828;
+    padding: 80px 0px;
+}
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.footer__link{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+.footer__link:hover{
+    color: orange;
+}
+.footer__card{
+    display: flex;
+    align-items: center;        
+    gap: 30px;
+}

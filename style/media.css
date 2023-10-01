@@ -1,0 +1,58 @@
+@media(max-width:1200px){
+    .nav__link{
+        color: yellow;
+        background: #282828;
+        border: 2px solid rgb(0, 0, 0);
+        
+    }
+    .nav__form{
+        padding-right: 150px;
+    }
+    .iphone__content{
+        flex-wrap: wrap;
+        column-gap: 30px;
+        margin: 0 auto;
+        max-width: 800px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .collection__iphone{
+        
+        overflow-x: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width:900px){  
+    .black__text{
+        width: 328px;
+    }
+    .header__baner{
+        width: 896px;
+        height:488px ;
+    }
+    .iphone__content{
+        gap: 40px;
+    }
+}
+
+
+
+@media(max-width:700px){
+    .header__baner{
+        width: 896px;
+        height:488px ;
+    }
+    .iphone__content{
+        gap: 40px;
+    }
+}
+@media(max-width:450px){
+
+}
